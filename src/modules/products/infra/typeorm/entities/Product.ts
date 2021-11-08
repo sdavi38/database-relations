@@ -17,11 +17,17 @@ class Product {
   @Column()
   name: string;
 
+  @Column('int')
+  cod: number;
+
   @Column('decimal')
   price: number;
 
   @Column('int')
   quantity: number;
+
+  @Column()
+  description: string;
 
   @OneToMany(() => OrdersProducts, order_products => order_products.product)
   order_products: OrdersProducts[];

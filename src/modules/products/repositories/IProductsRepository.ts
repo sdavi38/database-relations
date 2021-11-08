@@ -5,6 +5,7 @@ import IUpdateProductsQuantityDTO from '../dtos/IUpdateProductsQuantityDTO';
 
 interface IFindProducts {
   id: string;
+  name: string;
 }
 
 export default interface IProductsRepository {
